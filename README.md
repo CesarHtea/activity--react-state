@@ -10,7 +10,7 @@ Mr. R has a cold, and he can’t work today. So, you have to cover your friend.
 
 ### The Assignment
 
-Using `create-react-app` npm package, create a project and split the code from this [pen](#) into modules (`files`).<br/>
+Using `create-react-app` npm package, create a project and add the below code using modules (`files`).<br/>
 You will need to create 4 components (one per file): `App`, `Container`, `Shots` and `Shot`. And a `data` file.
 
 The markup code for each component:
@@ -112,6 +112,108 @@ class Shot extends React.Component {
     );
   }
 }
+```
+
+#### CSS, styles
+```css
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto';
+  background-color: #F4F4F4;
+}
+
+.nav {
+  color: #999;
+  font-size: 14px;
+  border-bottom: 1px solid #E5E5E5;
+  background-color: white;
+}
+
+.nav__list {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__list li {
+  margin: 0 10px;
+}
+
+.shots {
+  margin-top: 25px;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.shot {
+  width: 220px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+
+.shot img {
+  width: 100%;
+  height: 150px;
+}
+
+.stats {
+  color: #AAA;
+  font-size: 12px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.stats li {
+  margin: 0 5px;
+}
+
+.author {
+  color: #3a8bbb;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.author img {
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  margin-right: 5px;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+article {
+  margin: 10px;
+}
+
+.selected {
+  font-weight: bold;
+  color: #444;
+}
+
 ```
 
 #### `data object`
